@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js-方法定义</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 函数定义的方法 function 方法名 （形式参数）{方法体}
+    function fOne(number){
+        for (let i = 0; i < number ; i++) {
+            if (i%3===0&& i%5===0){
+                console.log("本次的数据"+i +"即是3的倍数又是5的倍数！");
+            }
+
+        }
+    }
+    fOne(150);
+
+    // 定义一个方法，方法接收2个数字。返回2个数字之间的所有奇数的个数
+    function fTwo(a,b){
+        let count=0;
+        for (;a <b ; a++) {
+            if (a%2!==0){
+                count++;
+            }
+
+        }return count;
+    }
+let count = fTwo(10,20);
+    console.log("10-20之间奇数的个数是："+count)
+</script>
+</html>

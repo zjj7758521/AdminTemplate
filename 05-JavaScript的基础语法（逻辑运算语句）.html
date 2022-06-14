@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js-逻辑运算语句</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 1.number:将number类型的变量直接作为判断条件，0和NaN看为false，其他的数字看为true
+    var numberOne=10;
+    var numberTwo=0;
+    var numberThree=parseInt("张三"); //NaN
+    // 直接将Number变量作为条件不加其他内容（js底层在做判断的时候会自动根据numberOne的值进行转换）
+    if (numberOne){
+        console.log("numberOne的判断执行了")
+    }
+    if (numberTwo){
+        console.log("numnertwo的判断执行了") //0：false
+    }
+    if (numberThree){
+        console.log("numberThree的判断执行了") // NaN：false
+    }
+
+    // 2.String类型
+    var strOne=""; // 空字符串
+    var strTwo=" "; // 有个空格（不是空字符串）
+    if (strOne){
+        console.log("strOne的判断执行了") // false
+    }
+    if (strTwo){
+        console.log("strTwo的判断执行了") // true
+    }
+
+    // 3.null
+    var nullValue=null;
+    var undefinedValue;
+    if (null){
+        console.log("nullValue的if判断执行了"); // false
+    }
+    if (undefinedValue){
+        console.log("underfinedValue的if判断执行了")  // false
+    }
+
+</script>
+</html>
